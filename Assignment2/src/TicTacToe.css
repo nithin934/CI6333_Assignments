@@ -1,0 +1,9 @@
+button:hover {
+  background-color: #f0f0f0;
+  transition: background-color 0.3s;
+}
+
+h2, h3 {
+  color: #333;
+  font-family: Arial, sans-serif;
+}
