@@ -1,0 +1,1 @@
+const i={tasks:[],completed:[]};export default (s=i,a)=>{switch(a.type){case 'ADD_TASK':return {...s,tasks:[...s.tasks,a.payload]};case 'DELETE_TASK':return {...s,tasks:s.tasks.filter((_,i)=>i!==a.payload)};case 'COMPLETE_TASK':return {tasks:s.tasks.filter((_,i)=>i!==a.payload),completed:[...s.completed,s.tasks[a.payload]]};default:return s;}};
